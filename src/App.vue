@@ -1,30 +1,56 @@
 <template>
-  <div id="nav">
+  <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
+  </div> -->
+  <!-- <router-view/> -->
+  <div id="app">
+    <div id="appimg">
+          <img src="@/assets/imgs/shouye.png" alt="">
+    </div>
+    <div id="top">
+      <Topbar></Topbar>
+    </div>
+    <div id="mid">
+      <Navbar></Navbar>
+    </div>
+    <div id="bottom">
+      <Newsbar></Newsbar>
+    </div>
   </div>
-  <router-view/>
 </template>
-
+<script>
+import Topbar from './components/topbar/Topbar'
+import Navbar from '@/components/navbar/Navbar'
+import Newsbar from './components/newsbar/Newsbar'
+export default {
+  name: 'App',
+  components: {
+    Topbar,
+    Navbar,
+    Newsbar
+  }
+}
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+#appimg {
+  position: relative;
+  width: 100%;
+  height: 193px;
+  background: red;
 }
-
-#nav {
-  padding: 30px;
+#appimg img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+#top {
+  margin-bottom: 10px;
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+#mid {
+  margin-bottom: 30px;
 }
 </style>
