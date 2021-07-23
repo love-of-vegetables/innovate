@@ -20,9 +20,9 @@
   </div>
 </template>
 <script>
-import Topbar from './components/topbar/Topbar'
-import Navbar from '@/components/navbar/Navbar'
-import Newsbar from './components/newsbar/Newsbar'
+import Topbar from '@/views/topbar/Topbar'
+import Navbar from '@/views/navbar/Navbar'
+import Newsbar from '@/views/newsbar/Newsbar'
 export default {
   name: 'App',
   components: {

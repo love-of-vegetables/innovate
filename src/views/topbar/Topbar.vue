@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Search from '@/common/search/Search'
-import PersonCenter from '@/common/personCenter/PersonCenter'
+import Search from '@/components/common/search/Search'
+import PersonCenter from '@/components/common/personCenter/PersonCenter'
 export default {
   name: 'Topbar',
   components: {

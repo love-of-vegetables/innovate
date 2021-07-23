@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import Bar from '@/common/bar/Bar'
-import BarItem from '@/common/bar/BarItem'
+import Bar from '@/components/common/bar/Bar'
+import BarItem from '@/components/common/bar/BarItem'
 export default {
   name: 'Navbar',
   components: {
@@ -62,6 +62,6 @@ export default {
 }
 #NavBar .nav-a:hover {
   color: #fff;
-  background: rgb(163, 166, 168);
+  background: #409EFF;
 }
 </style>

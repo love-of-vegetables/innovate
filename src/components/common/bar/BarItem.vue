@@ -12,7 +12,7 @@ export default {
 
 <style>
 .BarItem {
-  background: url(../../assets/imgs/navBackground.jpg) right no-repeat;
+  background: url(../../../assets/imgs/navBackground.jpg) right no-repeat;
   text-align: center;
 }
 </style>

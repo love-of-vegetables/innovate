@@ -13,6 +13,6 @@ export default {
 <style>
 .Bar {
   border: 1px #fff solid;
-  background: #fff;
+  background: #F2F6FC;
 }
 </style>
