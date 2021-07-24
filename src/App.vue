@@ -1,23 +1,22 @@
 <template>
-  <!-- <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div> -->
-  <!-- <router-view/> -->
-  <div id="app">
-    <div id="appimg">
-          <img src="@/assets/imgs/shouye.png" alt="">
+  <el-scrollbar id="appScroll"
+                height="1000px">
+    <div id="app">
+      <div id="appimg">
+        <img src="@/assets/imgs/shouye.png"
+             alt="">
+      </div>
+      <div id="top">
+        <Topbar></Topbar>
+      </div>
+      <div id="mid">
+        <Navbar></Navbar>
+      </div>
+      <div id="bottom">
+        <Newsbar></Newsbar>
+      </div>
     </div>
-    <div id="top">
-      <Topbar></Topbar>
-    </div>
-    <div id="mid">
-      <Navbar></Navbar>
-    </div>
-    <div id="bottom">
-      <Newsbar></Newsbar>
-    </div>
-  </div>
+  </el-scrollbar>
 </template>
 <script>
 import Topbar from '@/views/topbar/Topbar'
@@ -33,6 +32,9 @@ export default {
 }
 </script>
 <style>
+::-webkit-scrollbar {
+  display: none;
+}
 #appimg {
   position: relative;
   width: 100%;
@@ -50,7 +52,7 @@ export default {
 #top {
   margin-bottom: 10px;
 }
-#mid {
-  margin-bottom: 30px;
-}
+/* #mid {
+  margin-bottom: 2px;
+} */
 </style>

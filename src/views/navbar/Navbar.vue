@@ -40,13 +40,14 @@ export default {
 <style>
 #NavBar {
   display: flex;
-  width: 80%;
+  width: 75%;
   height: 50px;
   line-height: 50px;
   position: relative;
   left: 0;
   right: 0;
   margin: 0 auto;
+  border-bottom: 1px #d9d9d9 solid;
 }
 .NavBarItem {
    flex-grow: 1;
