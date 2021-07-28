@@ -124,6 +124,11 @@ export default {
   right: 0;
   margin: 0 auto;
   background: #F2F6FC;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
 }
 #newsTop {
   display: flex;
@@ -153,7 +158,7 @@ export default {
 }
 #newMainTitle {
   position: absolute;
-  left: 200px;
+  left: 160px;
   top: 42px;
   width: 80%;
   color: crimson;
@@ -165,7 +170,7 @@ export default {
   position: absolute;
   width: 80%;
   top: 75px;
-  left: 200px;
+  left: 160px;
   padding: 0 150px;
   text-align: center;
   font-size: 15px; 

@@ -1,24 +1,24 @@
 <template>
     <Bar id="NavBar">
       <BarItem class="NavBarItem">
-        <a class="nav-a"
-           href="">入党流程</a>
+        <router-link class="nav-a"  to="process"
+           href="">入党流程</router-link>
       </BarItem>
       <BarItem class="NavBarItem">
-        <a class="nav-a"
-           href="">党课党考学习</a>
+        <router-link class="nav-a" to=""
+           href="">党课党考学习</router-link>
       </BarItem>
       <BarItem class="NavBarItem">
-        <a class="nav-a"
-           href="">学习中心</a>
+        <router-link class="nav-a" to=""
+           href="">学习中心</router-link>
       </BarItem>
       <BarItem class="NavBarItem">
-        <a class="nav-a"
-           href="">在线考试</a>
+        <router-link class="nav-a" to=""
+           href="">在线考试</router-link>
       </BarItem>
       <BarItem class="NavBarItem">
-        <a class="nav-a"
-           href="">志愿时活动</a>
+        <router-link class="nav-a" to=""
+           href="">志愿时活动</router-link>
       </BarItem>
     </Bar>
 </template>
@@ -31,6 +31,11 @@ export default {
   components: {
     Bar,
     BarItem
+  },
+  methods: {
+    process() {
+      this.$router.push('/process')
+    }
   }
 }
 
@@ -48,6 +53,11 @@ export default {
   right: 0;
   margin: 0 auto;
   border-bottom: 1px #d9d9d9 solid;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
 }
 .NavBarItem {
    flex-grow: 1;

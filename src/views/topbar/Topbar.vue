@@ -30,5 +30,14 @@ export default {
   line-height: 60px;
   padding-bottom: 25px;
   background: #fff;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  
+}
+#topbarSearch {
+  margin-left: 180px;
 }
 </style>
