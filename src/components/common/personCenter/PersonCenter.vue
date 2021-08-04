@@ -1,13 +1,26 @@
 <template>
   <div>
-    <a id="Person-a" href=""><i class="el-icon-s-custom"></i>个人中心</a>
+    
+   <el-dropdown split-button  @click="handleClick">
+      <router-link id="Person-a" to="login" href=""><i class="el-icon-s-custom"></i>个人中心</router-link>
+      <template #dropdown>
+        <el-dropdown-menu>
+          <el-dropdown-item>修改信息</el-dropdown-item>
+          <el-dropdown-item>修改密码</el-dropdown-item>
+          <el-dropdown-item>退出登录</el-dropdown-item>
+        </el-dropdown-menu>
+      </template>
+    </el-dropdown>
+    
   </div>
 </template>
 
 <script>
 export default {
-  name: 'PersonCenter'
+  name: 'PersonCenter',
+   
 }
+
 </script>
 
 <style>
@@ -19,5 +32,12 @@ export default {
 }
 #Person-a:hover {
     color: #66afe9;
+}
+
+  
+.el-icon-arrow-down {
+  text-decoration: none;
+  color: rgb(85, 79, 79);
+  font-size: 19px;
 }
 </style>
