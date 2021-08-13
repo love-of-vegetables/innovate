@@ -16,6 +16,21 @@ const routes = [
     path: '/process',
     name : 'Process',
     component: () => import("../views/process/Process.vue") //路由懒加载
+  },
+  {
+    path: '/login',
+    name : 'Login',
+    component: () => import("../views/login/Login.vue") 
+  },
+  {
+    path: '/register',
+    name : 'Register',
+    component: () => import("../views/register/Register.vue") 
+  },
+  {
+    path: '/course',
+    name: 'Course',
+    component: () => import("@/views/course/Course.vue")
   }
 ]
 
