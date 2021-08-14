@@ -26,14 +26,11 @@ const routes = [
     path: '/register',
     name : 'Register',
     component: () => import("../views/register/Register.vue") 
-<<<<<<< HEAD
   },
   {
     path: '/course',
     name: 'Course',
     component: () => import("@/views/course/Course.vue")
-=======
->>>>>>> 1ba0c158bd0fc3854aaff2d5b50501a628e35b05
   }
 ]
 
