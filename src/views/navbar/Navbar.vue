@@ -45,6 +45,7 @@ export default {
 <style>
 #NavBar {
   display: flex;
+  min-width: 1440px;
   width: 75%;
   height: 50px;
   line-height: 50px;

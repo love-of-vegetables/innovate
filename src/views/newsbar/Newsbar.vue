@@ -118,6 +118,7 @@ export default {
 <style>
 #newsWrapper {
   width: 75vw;
+  min-width: 1440px;
   height: 1000px;
   position: relative;
   left: 0;

@@ -46,6 +46,9 @@ export default {
 body {
   background: #f4f5f7;
 }
+#course {
+  min-width: 1440px;
+}
 #courseMain {
   width: 75%;
   margin: 0 auto;
