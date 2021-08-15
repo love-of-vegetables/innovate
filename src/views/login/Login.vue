@@ -97,6 +97,10 @@
   }
 </script>
 <style>
+#login {
+  /* 防止窗口大小影响样式 */
+    min-width: 1040px;
+}
   .login_form {
     padding-top: 5%;
     padding-left: 33%;

@@ -280,6 +280,10 @@ export default {
 </script>
 
 <style >
+.register {
+  /* 防止窗口大小影响样式 */
+  min-width: 1500px;
+}
 .zhuce{
       padding-top: 1%;
     padding-left: 30%;
