@@ -5,8 +5,8 @@
       <router-link id="Person-a" to="login" href=""><i class="el-icon-s-custom"></i>个人中心</router-link>
       <template #dropdown>
         <el-dropdown-menu>
-          <el-dropdown-item>修改信息</el-dropdown-item>
-          <el-dropdown-item>修改密码</el-dropdown-item>
+          <el-dropdown-item><router-link id="information" to="information" href="">修改信息</router-link></el-dropdown-item>
+          <el-dropdown-item><router-link id="password" to="password" href="">修改密码</router-link></el-dropdown-item>
           <el-dropdown-item>退出登录</el-dropdown-item>
         </el-dropdown-menu>
       </template>

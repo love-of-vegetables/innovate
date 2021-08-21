@@ -8,7 +8,7 @@
     <div class="login_form">
       <h1 class="denglu_name">用户登录</h1>
       <input type="text"  class="user icon"  placeholder="用户名" v-model="userName">
-      <input type="text"  class="password icon"  placeholder="密码" v-model="password">
+      <input type="password"  class="password icon"  placeholder="密码" v-model="password">
       <div class="yanzheng">
         <input type="text" id="code" class="code icon" placeholder="请输入验证码" v-model="code">
         <div class="login-code" @click="refreshCode">
@@ -18,7 +18,8 @@
       <!--<button class="login_btn el-button el-button&#45;&#45;primary is-round" type="primary" round>登录</button>-->
       <el-button class="login_btn"   type="danger" round :loading="isBtnLoading">登录</el-button>
       <div style="margin-top: 10px">
-        <router-link id="register-but" to="register" href=""><span class="" style="color: #000099;">立即注册</span></router-link><span style="float: right;color: #A9A9AB">忘记密码？</span>
+        <router-link id="register-but" to="register" href=""><span class="" style="color: #000099;">立即注册</span></router-link>
+        <router-link id="forgetpassword-but" to="forgetpassword" href=""><span style="float: right;color: #A9A9AB">忘记密码？</span></router-link>
       </div>
     </div>
   </div>

@@ -9,15 +9,15 @@
            href="">党课党考学习</router-link>
       </BarItem>
       <BarItem class="NavBarItem">
-        <router-link class="nav-a" to=""
+        <router-link class="nav-a" to="study"
            href="">学习中心</router-link>
       </BarItem>
       <BarItem class="NavBarItem">
-        <router-link class="nav-a" to=""
+        <router-link class="nav-a" to="examination"
            href="">在线考试</router-link>
       </BarItem>
       <BarItem class="NavBarItem">
-        <router-link class="nav-a" to=""
+        <router-link class="nav-a" to="volunteer"
            href="">志愿时活动</router-link>
       </BarItem>
     </Bar>
