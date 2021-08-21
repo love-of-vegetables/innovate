@@ -1,6 +1,4 @@
 <template>
-  <el-scrollbar id="appScroll"
-                height="1000px">
     <div id="app">
       <top-img></top-img>
       <div id="top">
@@ -13,7 +11,6 @@
         <newsbar></newsbar>
       </div>
     </div>
-  </el-scrollbar>
 </template>
 
 <script>
@@ -36,8 +33,24 @@ export default {
 
 <style>
 ::-webkit-scrollbar {
-  display: none;
+  width: 12px;
+  height: 12px;
 }
+::-webkit-scrollbar-track {
+  background: rgb(239, 239, 239);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #bfbfbf;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+::-webkit-scrollbar-corner {
+  background: #179a16;
+}
+
 
 #top {
   margin-bottom: 10px;

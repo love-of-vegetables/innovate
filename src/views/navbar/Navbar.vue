@@ -5,7 +5,7 @@
            href="">入党流程</router-link>
       </BarItem>
       <BarItem class="NavBarItem">
-        <router-link class="nav-a" to=""
+        <router-link class="nav-a" to="course"
            href="">党课党考学习</router-link>
       </BarItem>
       <BarItem class="NavBarItem">
@@ -45,6 +45,7 @@ export default {
 <style>
 #NavBar {
   display: flex;
+  min-width: 1440px;
   width: 75%;
   height: 50px;
   line-height: 50px;

@@ -29,6 +29,11 @@ const routes = [
     component: () => import("../views/register/Register.vue") 
   },
   {
+    path: '/course',
+    name: 'Course',
+    component: () => import("@/views/course/Course.vue")
+  },
+  {
     path: '/information',
     name : 'Information',
     component: () => import("../views/information/Information.vue") 
@@ -86,8 +91,8 @@ const routes = [
       }
     ]
   
+   
   }
-  
 ]
 
 

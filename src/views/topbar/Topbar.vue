@@ -22,6 +22,7 @@ export default {
 #top {
   font-size: 	18px;
   width: 100%;
+  min-width: 1440px;
   height: 60px;
   border-bottom: rgb(243, 234, 234) 1px solid;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .12);
