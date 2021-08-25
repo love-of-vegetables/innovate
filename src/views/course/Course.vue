@@ -2,6 +2,7 @@
   <div id="course">
     <top-img></top-img>
     <topbar></topbar>
+    <navbar></navbar>
     <div id="courseMain">
       <div id="courNavbar">
         <el-menu :default-active="activeIndex"
@@ -25,6 +26,7 @@
 <script>
 import TopImg from '../../components/common/TopImg/TopImg.vue'
 import Topbar from '../topbar/Topbar.vue'
+import Navbar from '../navbar/Navbar.vue'
 export default {
 
   data () {
@@ -32,7 +34,7 @@ export default {
       activeIndex: '1'
     };
   },
-  components: { TopImg, Topbar },
+  components: { TopImg, Topbar, Navbar },
   methods: {
     handleSelect (key, keyPath) {
       console.log(key, keyPath);

@@ -2,6 +2,7 @@
 
   <div id="process">
     <top-img></top-img>
+    <topbar></topbar>
     <navbar></navbar>
     <p id="Pro-Title">成为党员需要经历的五种身份变化及流程</p>
     <el-collapse @change="handleChange"
@@ -55,7 +56,7 @@
     <div id="Proc-drawer">
       <el-button @click="drawer = true"
                  type="primary"
-                 style="margin-left: 16px;">
+                 style="margin-left: 16px;margin-top: 65px">
         查看当前身份状态
       </el-button>
 
@@ -98,7 +99,9 @@
 
 <script>
 import TopImg from '../../components/common/TopImg/TopImg.vue'
+import Topbar from '../topbar/Topbar.vue'
 import Navbar from '../navbar/Navbar.vue'
+
 export default {
   data () {
     return {
@@ -117,6 +120,7 @@ export default {
   },
   components: {
     TopImg,
+    Topbar,
     Navbar
   }
 }
@@ -150,6 +154,7 @@ user-select: none;
   margin: 0 auto;
   margin-top: 80px;
 }
+
 el-collapse-item div {
   height: 30px;
 }
