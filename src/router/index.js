@@ -2,21 +2,23 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Vue from 'vue'
 import Router from 'vue-router'
 import Shouye from '../views/shouye/Shouye.vue'
+import CourseStu from '../views/course/CourseStu'
+import Process from "../views/process/Process.vue"
 
 const routes = [
   {
     path: '/',
-    redirect: '/shouye'
+    redirect: '/home'
   },
   {
-    path: '/shouye',
-    name: 'Shouye',
+    path: '/home',
+    name: 'Home',
     component: Shouye
   },
   {
     path: '/process',
     name : 'Process',
-    component: () => import("../views/process/Process.vue") //路由懒加载
+    component: Process
   },
   {
     path: '/login',
@@ -28,10 +30,33 @@ const routes = [
     name : 'Register',
     component: () => import("../views/register/Register.vue") 
   },
+  // 党课党考学习模块
   {
     path: '/course',
     name: 'Course',
-    component: () => import("@/views/course/Course.vue")
+    component: () => import('@/views/course/course'),
+    redirect: '/course/courseStu',
+    children: [
+      {
+        path: 'courseStu',
+        component: CourseStu,
+      },
+      {
+        path: 'test',
+        name: 'Test',
+        component: () => import('../views/course/Test')
+      },
+      {
+        path: 'record',
+        name: 'Record',
+        component: () => import('../views/course/Record')
+      },
+      {
+        path: 'collect',
+        name: 'Collect',
+        component: () => import('../views/course/Collect')
+      },
+    ]
   },
   {
     path: '/information',
@@ -88,17 +113,25 @@ const routes = [
         path:'/apply',
         name:'apply',
         component:() => import("../views/volunteerinfor/apply.vue"),
-      }
+      },
+      
     ]
-  
-   
+  },
+  {
+    path: '/404',
+    name: '404',
+    component: () => import('../views/404')
   }
 ]
 
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  scrollBehavior: () => ({
+    y: 0
+  }),
+  routes,
+
 })
 
 export default router

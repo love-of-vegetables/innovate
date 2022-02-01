@@ -45,9 +45,9 @@
       <el-divider></el-divider>
       <span>5.申请书必须用黑色签字笔书写，统一使用华农原稿纸进行书写，字数不得少于2000字且最后一页正文必须过半，需用普通400字原稿纸誊写。</span>
       <el-divider></el-divider>
-      <span>6.在申请书的背面用铅笔注明年级专业、班级、姓名和学号。</span>
+      <span>6.需在申请书的背面用铅笔注明年级专业、班级、姓名和学号。</span>
       <el-divider></el-divider>
-      <span>7.不允许涂改。</span>
+      <span>7.入党申请书不允许涂改。</span>
       <el-divider></el-divider>
       <div>
 

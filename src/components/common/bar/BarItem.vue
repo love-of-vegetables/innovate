@@ -15,6 +15,6 @@ export default {
   text-align: center;
 }
 .BarItem:not(:last-child) {
-    background: url(../../../assets/imgs/navBackground.jpg) right no-repeat;
+    background: url(~@/assets/imgs/navBackground.jpg) right no-repeat;
 }
 </style>

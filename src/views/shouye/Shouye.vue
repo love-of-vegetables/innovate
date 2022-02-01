@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import TopImg from '../../components/common/TopImg/TopImg.vue'
+import TopImg from '@/components/common/TopImg/TopImg.vue'
 import Topbar from '../topbar/Topbar.vue'
 import Navbar from '../navbar/Navbar.vue'
 import Newsbar from '../newsbar/Newsbar.vue'

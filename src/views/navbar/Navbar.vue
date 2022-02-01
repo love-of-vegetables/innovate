@@ -1,26 +1,31 @@
 <template>
-    <Bar id="NavBar">
-      <BarItem class="NavBarItem">
-        <router-link class="nav-a"  to="process"
-           href="">入党流程</router-link>
-      </BarItem>
-      <BarItem class="NavBarItem">
-        <router-link class="nav-a" to="course"
-           href="">党课党考学习</router-link>
-      </BarItem>
-      <BarItem class="NavBarItem">
-        <router-link class="nav-a" to="study"
-           href="">学习中心</router-link>
-      </BarItem>
-      <BarItem class="NavBarItem">
-        <router-link class="nav-a" to="examination"
-           href="">在线考试</router-link>
-      </BarItem>
-      <BarItem class="NavBarItem">
-        <router-link class="nav-a" to="volunteer"
-           href="">志愿时活动</router-link>
-      </BarItem>
-    </Bar>
+  <Bar id="NavBar">
+    <BarItem class="NavBarItem">
+      <router-link class="nav-a"
+                   to="/process"
+                   replace>入党流程</router-link>
+    </BarItem>
+    <BarItem class="NavBarItem">
+      <router-link class="nav-a"
+                   to="/course"
+                   replace>党课党考学习</router-link>
+    </BarItem>
+    <BarItem class="NavBarItem">
+      <router-link class="nav-a"
+                   to="/study"
+                   replace>学习中心</router-link>
+    </BarItem>
+    <BarItem class="NavBarItem">
+      <router-link class="nav-a"
+                   to="/examination"
+                   replace>在线考试</router-link>
+    </BarItem>
+    <BarItem class="NavBarItem">
+      <router-link class="nav-a"
+                   to="/volunteer"
+                   replace>志愿时活动</router-link>
+    </BarItem>
+  </Bar>
 </template>
 
 <script>
@@ -33,7 +38,7 @@ export default {
     BarItem
   },
   methods: {
-    process() {
+    process () {
       this.$router.push('/process')
     }
   }
@@ -58,12 +63,11 @@ export default {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
 }
 .NavBarItem {
-   flex-grow: 1;
+  flex-grow: 1;
 }
-#NavBar .nav-a{
+#NavBar .nav-a {
   display: block;
   width: 100%;
   height: 100%;
@@ -74,6 +78,6 @@ export default {
 }
 #NavBar .nav-a:hover {
   color: #fff;
-  background: #409EFF;
+  background: #409eff;
 }
 </style>

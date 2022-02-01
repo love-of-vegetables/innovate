@@ -8,17 +8,17 @@
         <el-menu :default-active="activeIndex"
                  class="el-menu-demo"
                  mode="horizontal"
-                 @select="handleSelect">
-          <el-menu-item index="1">党课学习</el-menu-item>
-          <el-menu-item index="2">党考模拟</el-menu-item>
-          <el-menu-item index="3">历史记录</el-menu-item>
-          <el-menu-item index="4">我的收藏</el-menu-item>
+                 @select="handleSelect"
+                 router="true">
+          <el-menu-item index="/course/courseStu"
+                        @click="toCourseStu">视频学习</el-menu-item>
+          <el-menu-item index="/course/test"
+                        @click="toTest">课后练习</el-menu-item>
+          <el-menu-item index="/course/record"
+                        @click="toRecord">模拟试卷</el-menu-item>
         </el-menu>
       </div>
-      <div id="coursePart">
-        <div id="course-classes">
-        </div>
-      </div>
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -31,13 +31,28 @@ export default {
 
   data () {
     return {
-      activeIndex: '1'
+      activeIndex: this.$route.fullPath
     };
   },
   components: { TopImg, Topbar, Navbar },
   methods: {
     handleSelect (key, keyPath) {
-      console.log(key, keyPath);
+      this.activeIndex = key
+    },
+    // 党课学习路由跳转
+    toCourseStu () {
+      this.$router.push({ name: 'Course' })
+    },
+    toTest () {
+      this.$router.push({ name: 'Test' })
+    },
+    toRecord () {
+      this.$router.push({ name: 'Record' })
+    },
+  },
+  watch: {
+    $route(val, oldVal) {
+      this.activeIndex = val.fullPath
     }
   }
 }
@@ -67,5 +82,8 @@ body {
   border: 1px solid #eee;
   border-radius: 4px;
   background: #fff;
+}
+.card-header p {
+  font-size: 25px;
 }
 </style>
